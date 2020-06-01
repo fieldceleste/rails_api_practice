@@ -6,6 +6,8 @@ class KittensController < ApplicationController
 
   def index
     @kittens = Kitten.see_kitten
+    @kittens
+    @kittens = Kitten.all
     render :index
 
   end
