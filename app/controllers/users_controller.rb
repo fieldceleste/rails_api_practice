@@ -1,7 +1,20 @@
 class UsersController < ApplicationController
 
+  
+#  def index
+#   puts "Please add content"
+#  end
+
   def new
     @user = User.new
+  end
+
+  def protected 
+    if session[:user_id]
+    else
+      flash[:alert] = "You do not have permission to view this page, Please signup."
+      redirect_to '/signup'
+    end
   end
 
   def create 

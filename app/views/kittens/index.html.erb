@@ -1,6 +1,29 @@
 <h1> Welcome to the Kitten Page</h1>
 
-<h3>If your feeling blue, just look at these cute kitten pics! </h3>
+<h3>If your feeling blue, just look at these cat facts! </h3>
 
-<%= @kittens ['name'] %>
-<% @see_kitten ['name']%>
+
+<% @kittens ["texts"].each do |text| %>
+  <h3>Here is your amazzzziing fact: <%= text["strText"] %></h3>
+
+
+  <h4>If you want to see our other cool pages click here. <%= link_to "More", new_kitten_path %></h4>
+
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%# <%= @kittens ['name'] %>
+<%# <% @see_kitten ['name']%> %> %>

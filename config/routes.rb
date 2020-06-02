@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root to: 'users#new'
+  root to: 'kittens#index'
   
    get '/signup' => 'users#new'
    post '/users' => 'users#create'

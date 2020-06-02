@@ -1,1 +1,11 @@
-<p>Where new kittens will be added</p>
+<h1> Welcome to the Kitten Page</h1>
+
+<% @kittens ["texts"].each do |text| %>
+
+
+<h3>Fact: <%=text['strText'] %></h3>
+<h3>Rating: <%upvotes['intUpVotes']%></h3>
+
+ <h4><% link_to "Return to Home", kittens_path %></h4>
+
+ <% end %>

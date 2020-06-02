@@ -1,0 +1,19 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.box {
+  border: orange solid 2px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 15%;
+  padding: 15px;
+  background-color: whitesmoke;
+}
+body {
+  background-color: rgb(247, 247, 159);
+  font-family: American Typewriter, serif;
+}
+
+footer {
+  text-align: center;
+}
